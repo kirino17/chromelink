@@ -22,15 +22,15 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 
 其中:
 * `--remote-debugging-port=9222`选项意为开启`chrome`浏览器的远程调试支持,`9222`则具体表示为用以远程调试的端口号。
-* `--user-data-dir=<some directory>`选项可以使`chrome`浏览器把缓存数据存放在你所定义的文件夹中。
-
-###### 操作chrome tags
+* `--user-data-dir=<some directory>`选项可以让`chrome`浏览器将缓存数据放在你所定义的文件夹中。
 
 在浏览器中访问`http://localhost:9222`即可查看在`chrome`浏览器中所有打开的标签页面。
 
-        http://loacalhost:9222/json
+###### 操作chrome tags
 
 获取所有打开的标签信息,将返回一个json数组:
+
+        http://loacalhost:9222/json
 
 ```javascript
 [ {
