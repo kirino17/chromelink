@@ -1,0 +1,207 @@
+IChromeLink V1.00 【2017/06/26】
+
+- 增加静态函数: IChromeLink::GetTabs(LPCTSTR szTraceAddr, IChromeCurTabs &Tabs);
+
+- 增加静态函数: IChromeLink::NewTab(LPCTSTR szTraceAddr, LPCTSTR szUrl, IChromeTabInfo &Tab);
+
+- 增加静态函数: IChromeLink::CloseTab(LPCTSTR szTraceAddr,LPCTSTR szId);
+
+- 增加静态函数: IChromeLink::ActivateTab(LPCTSTR szTraceAddr, LPCTSTR szId);
+
+IChromeLink V1.01 【2017/06/28】
+
+- 增加函数: IChromeLink::LinkStart(void);
+
+- 增加函数: IChromeLink::GetMainFrame(void);
+
+- 增加函数: IChromeLink::GetFrameCount(void);
+
+- 增加函数: IChromeLink::GetChildFrame(int index);
+
+- 增加函数: IChromeLink::GetExecutionContextCount(void);
+
+- 增加函数: IChromeLink::GetExecutionContextId(int index);
+
+- 增加函数: IChromeLink::Evaluate(LPCTSTR szExpression,LPCTSTR szObjectGroup,BOOL bIncludeCommandLineAPI,BOOL bSilent,DWORD dwExecutionContextId,BOOL bReturnByValue, BOOL bGeneratePreview,BOOL bUserGesture,BOOL bAwaitPromise, IChromeEvalResult &objResult);
+
+- 增加函数: IChromeLink::ReleaseObjectGroup(LPCTSTR szObjectGroup);
+
+- 增加函数: IChromeLink::Navigate(LPCTSTR szUrl, LPCTSTR szReferrer);
+
+- 增加函数: IChromeLink::ReLoad(BOOL bIgnoreCache,LPCTSTR szScriptToEvaluateOnLoad);
+
+- 增加函数: IChromeLink::GetResourceContent(LPCTSTR szFrameId, LPCTSTR szUrl,IString &strRetContent,BOOL &bBase64Encoded);
+
+- 增加易语言接口
+
+IChromeLink V1.02 【2017/06/29】
+
+- 完善易语言接口
+
+IChromeLink V1.03 【2017/07/04】
+
+- 增加函数: BOOL IChromeLink::IsLinked(void);
+
+- 增加函数: BOOL IChromeLink::UpdateFrame(void);
+
+- 增加函数: BOOL IChromeLink::UpdateFrame(void);
+
+- 增加函数: BOOL IChromeLink::SetDocumentContent(LPCTSTR szFrameId, LPCTSTR szHtml);
+
+- 增加函数: BOOL IChromeLink::CaptureScreenshot(LPCTSTR szFormat, int nQuality, BOOL bFromSurface,IString &strData);
+
+- 增加函数: BOOL IChromeLink::SetDeviceMetricsOverride(int nWidth,int nHeight,double flDeviceScaleFactor,BOOL bMobile,BOOL bFitWindow,double flScale,int nScreenWidth,int nScreenHeight,int nPositionX,int nPositionY);
+
+- 增加函数: BOOL IChromeLink::ClearDeviceMetricsOverride(void);
+
+- 增加函数: BOOL IChromeLink::ForceViewport(double x, double y, double scale);
+
+- 增加函数: BOOL IChromeLink::ResetViewport(void);
+
+- 增加函数: BOOL IChromeLink::ResetPageScaleFactor(void);
+
+- 增加函数: BOOL IChromeLink::SetPageScaleFactor(double flPageScaleFactor);
+
+- 增加函数: BOOL IChromeLink::SetVisibleSize(int nWidth, int nHeight);
+
+- 增加函数: BOOL IChromeLink::SetGeolocationOverride(double flLatitude, double flLongitude, double flAccuracy);
+
+- 增加函数: BOOL IChromeLink::ClearGeolocationOverride(void);
+
+- 增加函数: BOOL IChromeLink::SetTouchEmulationEnabled(BOOL bEnabled, LPCTSTR szConfiguration);
+
+- 增加函数: BOOL IChromeLink::SetEmulatedMedia(LPCTSTR szMedia);
+
+- 增加函数: BOOL IChromeLink::SetCPUThrottlingRate(double rate);
+
+- 增加函数: BOOL IChromeLink::CanEmulate(void);
+
+- 增加函数: BOOL IChromeLink::SetUserAgentOverride(LPCTSTR szUserAgent);
+
+- 增加函数: BOOL IChromeLink::SetBlockedURLs(std::vector<IString> &Urls);
+
+- 增加函数: BOOL IChromeLink::CanClearBrowserCache(void);
+
+- 增加函数: BOOL IChromeLink::ClearBrowserCache(void);
+
+- 增加函数: BOOL IChromeLink::CanClearBrowserCookies(void);
+
+- 增加函数: BOOL IChromeLink::ClearBrowserCookies(void);
+
+- 完善易语言接口
+
+IChromeLink V1.04 【2017/07/06】
+
+- 增加函数: BOOL IChromeLink::GetCookies(LPCTSTR szUrl, IChromeCookieVectors &Result);
+
+- 增加函数: BOOL IChromeLink::GetAllCookies(IChromeCookieVectors &Result);
+
+- 增加函数: BOOL IChromeLink::DeleteCookie(LPCTSTR szCookieName,LPCTSTR szUrl);
+
+- 增加函数: BOOL IChromeLink::SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCTSTR szDomain, LPCTSTR szPath, BOOL bSecure, BOOL bHttpOnly);
+
+- 完善易语言接口
+
+IChromeLink V1.05 【2017/07/10】
+
+- 增加函数: BOOL IChromeLink::GetResourceList(IChromeResourceVectors &objVectors);
+
+- 完善易语言接口
+
+- 修正部分BUG
+
+IChromeLink V1.06 【2017/07/11】
+
+- 修正设置UA错误问题。
+
+IChromeLink V1.07 【2017/07/11】
+
+- 增加函数: BOOL IChromeLink::IsLoading(void);
+
+- 增加参考例程
+
+IChromeLink V1.071 【2017/07/17】
+
+- 修正: BOOL IChromeLink::SetUserAgentOverride(LPCTSTR szUserAgent); 弹出提示框问题。
+
+IChromeLink V1.072 【2017/07/25】
+
+- 修正: 执行表达式无法在子框架中执行的问题。
+
+IChromeLink V1.10 【2017/08/23】
+
+- 结构性调整,优化代码,精简调用,增强易用性。
+
+IChromeLink V1.11 【2017/08/28】
+
+- 增加: Chrome 远程调试工具例程,修正部分问题。
+
+IChromeLink V1.12 【2017/08/30】
+
+- 修正: 当已经连接至标签后,再次取标签列表失败的情况。
+
+IChromeLink V1.14 【2017/09/12】
+
+- 修正: 无法枚举到子框架问题
+
+- 新增: 按键测试示例代码
+
+- 新增: 鼠标测试示例代码
+
+IChromeLink V1.15 【2017/09/25】
+
+- 新增: IChromeLink::INPUT_发送触点()
+
+- 新增: IChromeLink::INPUT_发送模拟触点()
+
+- 新增: IChromeLink::INPUT_合成捏合手势()
+
+- 新增: IChromeLink::INPUT_合成点击手势()
+
+- 新增: IChromeLink::CSS_元素定位()
+
+- 调整: IChromeLink::TAG_启用仿真触点设备()
+
+- 新增: Chrome 远程调试工具例程,关于触控部分演示例程
+
+IChromeLink V1.15A 【2017/12/28】
+
+- 新增: 关于滑动验证的模拟代码示例
+
+IChromeLink V1.16 【2018/01/04】
+
+- 新增: IChromeLink::TAG_是否有对话框()
+
+- 新增: IChromeLink::TAG_反馈对话框()
+
+- 新增: IChromeLink::TAG_取对话框信息()
+
+- 新增: Chrome 远程调试工具中加入对于浏览器弹出对话框(Alert,Confirm,Prompt,Beforeunload)时的处理方案
+
+IChromeLink V1.17 【2018/01/14】
+
+- 细节优化以及修正演示例程的部分代码问题。
+
+IChromeLink V1.18 【2018/02/09】
+
+- 修正: 无法枚举到子框架页面资源问题
+
+- 新增: "CHROME_框架资源"类型结构中增加"框架标识符"属性,用以表明该资源所属的框架
+
+- 新增: IChromeLink::TAG_取控制台信息() 命令,用以获取输出到浏览器控制台中的log信息
+
+IChromeLink V1.19 【2018/03/17】
+
+- 修正: 子框架页面资源枚举遗漏问题
+
+- 修正: COOKIE_枚举,COOKIE_设置,COOKIE_删除函数调用时参数为空会导致崩溃的问题。
+
+- 新增: CHROME_COOKIE结构增加成员"secure"和"expires"
+
+IChromeLink V1.20 【2018/03/20】
+
+- 新增: COOKIE_设置函数增加"secure"和"expires"参数
+
+- 新增: TAG_更新框架函数,可在任何时刻获取到标签页中的框架信息
+
+- 修正: 优化示例代码"Chrome 远程调试工具.e"中的部分细节问题

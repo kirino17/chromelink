@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function bigImg(x)
+{
+x.style.height="180px";
+x.style.width="180px";
+}
+
+function normalImg(x)
+{
+x.style.height="128px";
+x.style.width="128px";
+}
+</script>
+</head>
+<body>
+
+<img onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://www.w3school.com.cn/i/eg_smile.gif" alt="Smiley" >
+
+<p>函数 bigImg() 在鼠标指针移动到图像上时触发。此函数放大图像。</p>
+<p>函数 normalImg() 在鼠标指针移出图像时触发。此函数把图像的高度和宽度重置为正常尺寸。</p>
+
+</body>
+</html>

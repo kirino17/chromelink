@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayResult()
+{
+var x;
+if(window.event) // IE8 以及更早版本
+	{
+	x=event.keyCode;
+	}
+else if(event.which) // IE9/Firefox/Chrome/Opera/Safari
+	{
+	x=event.which;
+	}
+var keychar=String.fromCharCode(x);
+alert("按键 " + keychar + " 被按下");
+}
+</script>
+</head>
+<body onkeydown="displayResult()">
+
+<div>当用户在输入字段中按下按键时触发函数。此函数提示用户已按按键。</div>
+
+
+</body>
+</html>
