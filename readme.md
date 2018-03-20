@@ -11,7 +11,7 @@ complie(only windows)
 Operating
 -------------------------
 
-         在使用工具前你需要一个![chrome](https://www.google.cn/chrome/)浏览器
+在使用工具前你需要一个[chrome](https://www.google.cn/chrome/)浏览器
 
 ###### 启动chrome
 
