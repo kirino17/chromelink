@@ -11,9 +11,9 @@ complie(only windows)
 Operating
 -------------------------
 
-         在使用工具前你需要一个[chrome](https://www.google.cn/chrome/)浏览器
+         在使用工具前你需要一个![chrome](https://www.google.cn/chrome/)浏览器
 
-######启动chrome
+###### 启动chrome
 
 ```Bash
 cd "C:\Program Files (x86)\Google\Chrome\Application\"
@@ -24,6 +24,6 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 
 等待`chrome`浏览器启动完成后访问`http://localhost:9222`即可查看在`chrome`浏览器中所有打开的标签页面信息。
 
-######操作chrome tags
+###### 操作chrome tags
 
 
