@@ -1,7 +1,7 @@
 chromelink
 ========================================
 
-这是一个简单的用于`chrome`浏览器上的外部`Web`自动化测试工具,它依据`Chrome DevTools Protocol`协议编写而来,并使用`EPL`对外公开了一套标准且友好的脚本调用接口。
+这是一个用于`chrome`浏览器上的远程`Web`自动化测试工具,它依据`Chrome DevTools Protocol`协议编写而来,并使用`EPL`公开了一套标准且友好的脚本调用接口。
 
 features(特性)
 -------------------------
@@ -68,7 +68,16 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 
 ##### 激活标签:
 
-![closetag](http://www.ps-works.cn/chromelink/doc/img/activetag.png "激活标签")
+![activetag](http://www.ps-works.cn/chromelink/doc/img/activetag.png "激活标签")
 
 ------------------------------------------------
 
+### 跳转URL
+
+![jmpurl](http://www.ps-works.cn/chromelink/doc/img/jmpurl.png "跳转URL")
+
+------------------------------------------------
+
+### 执行表达式
+
+![eval](http://www.ps-works.cn/chromelink/doc/img/eval.png "执行表达式")
