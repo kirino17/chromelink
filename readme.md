@@ -72,12 +72,14 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 
 ------------------------------------------------
 
-### 跳转URL
+### Sample code
+
+###### 跳转URL
 
 ![jmpurl](http://www.ps-works.cn/chromelink/doc/img/jmpurl.png "跳转URL")
 
 ------------------------------------------------
 
-### 执行表达式
+##### 执行表达式
 
 ![eval](http://www.ps-works.cn/chromelink/doc/img/eval.png "执行表达式")
