@@ -28,7 +28,7 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 
 ### 操作chrome tags
 
-获取所有打开的标签信息:
+##### 获取所有打开的标签信息:
 ------------------------------------
 
 ![gettags](http://www.ps-works.cn/chromelink/doc/img/gettags.png "获取标签")
@@ -36,19 +36,19 @@ chrome --remote-debugging-port=9222 --user-data-dir=<some directory>
 ###### “ec726540-0397-4517-884e-caca92abbdf7” | “百度一下，你就知道” | “https://www.baidu.com/”
 ###### “0edcf6d5-e9e2-4e23-9a1d-254aa9a52cc3” | “黑猫 - 易浏览器项目” | “http://www.ps-works.cn/”
 
-打开新的标签:
+##### 打开新的标签:
 --------------------------------------
 
 ![newtag](http://www.ps-works.cn/chromelink/doc/img/newtag.png "打开标签")
 
 ###### “cec7969b-a25c-4548-b3d0-786c4a6e42af” | “百度一下，你就知道” | “https://www.baidu.com/”
 
-关闭标签:
+##### 关闭标签:
 ---------------------------------------
 
 ![closetag](http://www.ps-works.cn/chromelink/doc/img/closetag.png "关闭标签")
 
-激活标签:
+##### 激活标签:
 ---------------------------------------
 
 ![closetag](http://www.ps-works.cn/chromelink/doc/img/activetag.png "激活标签")
