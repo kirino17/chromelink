@@ -13,6 +13,9 @@ Tabs : 返回获得的标签页列表
 */
 BOOL IChromeLink::GetTabs(LPCTSTR szTraceAddr, IChromeCurTabs &Tabs)
 {
+
+	
+
 	Tabs.clear();
 	BOOL bResult = FALSE;
 	IStream strBuilderUrl;
@@ -2253,12 +2256,14 @@ BOOL IChromeLink::GetCookies(LPCTSTR szUrl, IChromeCookieVectors &Result)
 			for (size_t i = 0; i < nMax; i++)
 			{
 				json::value objChild = objCookies[i];
+				//MessageBox(NULL, objChild.serialize().c_str(), NULL, NULL);
 				Info.strDomain = objChild[U("domain")].as_string();
 				Info.strName = objChild[U("name")].as_string();
 				Info.strValue = objChild[U("value")].as_string();
 				Info.strPath = objChild[U("path")].as_string();
 				Info.bHttpOnly = objChild[U("httpOnly")].as_bool();
 				Info.bSecure = objChild[U("secure")].as_bool();
+				Info.expires = objChild[U("expires")].as_double();
 				Result.push_back(Info);
 			}
 		}
@@ -2324,7 +2329,7 @@ BOOL IChromeLink::GetAllCookies(IChromeCookieVectors &Result)
 				Info.strPath = objChild[U("path")].as_string();
 				Info.bHttpOnly = objChild[U("httpOnly")].as_bool();
 				Info.bSecure = objChild[U("secure")].as_bool();
-				Info.expires = objChild[U("expires")].as_number().to_int64();
+				Info.expires = objChild[U("expires")].as_double();
 				Result.push_back(Info);
 			}
 		}
@@ -2401,7 +2406,7 @@ bSecure: 默认为false。
 bHttpOnly: 默认为false.
 返回: 如果返回真则操作是成功的
 */
-BOOL IChromeLink::SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCTSTR szDomain, LPCTSTR szPath, BOOL bSecure,__int64 expires, BOOL bHttpOnly)
+BOOL IChromeLink::SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCTSTR szDomain, LPCTSTR szPath, BOOL bSecure, double expires, BOOL bHttpOnly)
 {
 	ASSERT_KEEP_LINKEDR(FALSE);
 	DWORD dwAutoId = this->GetAutoRand();
@@ -2416,8 +2421,13 @@ BOOL IChromeLink::SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCT
 	objParams[U("domain")] = json::value::string(szDomain);
 	objParams[U("path")] = json::value::string(szPath);
 	objParams[U("secure")] = json::value::boolean(bSecure);
-	objParams[U("expires")] = json::value::number(expires);
+	if (expires > 0) {
+		objParams[U("expires")] = json::value::number(expires);
+	}
+	
 	objParams[U("httpOnly")] = json::value::boolean(bHttpOnly);
+
+	//MessageBox(NULL, objParams.serialize().c_str(), NULL, NULL);
 
 	objRoot[TEXT("params")] = objParams;
 	std::string strBody = conversions::utf16_to_utf8(objRoot.serialize());

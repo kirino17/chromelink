@@ -1,0 +1,62 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  IChromeLink.cpp
+..\core\IChromeLink.cpp(36): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(358): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(486): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(372): warning C4101: “szVar”: 未引用的局部变量
+..\core\IChromeLink.cpp(558): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(680): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(699): warning C4101: “szVar”: 未引用的局部变量
+..\core\IChromeLink.cpp(762): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(899): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1013): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1095): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1145): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1196): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1224): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1264): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1316): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1399): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1440): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1489): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1530): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1571): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1616): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1663): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1712): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1753): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1800): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1846): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1891): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1932): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(1978): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2010): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(2029): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2070): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2112): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2153): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2195): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2256): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(2243): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2323): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(2309): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2381): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2445): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2489): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2524): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(2611): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2676): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2715): warning C4018: “<”: 有符号/无符号不匹配
+..\core\IChromeLink.cpp(2750): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2801): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2847): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2902): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(2948): warning C4101: “ex”: 未引用的局部变量
+..\core\IChromeLink.cpp(3002): warning C4101: “ex”: 未引用的局部变量
+    正在创建库 ..\..\实验室\IChromeLink.lib 和对象 ..\..\实验室\IChromeLink.exp
+  正在生成代码
+  4 of 5569 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  IChromeLink.vcxproj -> G:\C++Studio\IChromeLink\Projects\IChromeLink\..\..\实验室\IChromeLink.dll

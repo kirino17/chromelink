@@ -182,9 +182,12 @@ namespace Komari {
 		IString strValue;
 		IString strDomain;
 		IString strPath;
+		IString strSameSite;
 		BOOL bHttpOnly;
 		BOOL bSecure;
-		__int64 expires;
+		BOOL session;
+		double expires;
+
 	};
 	typedef std::vector<IChromeCookie> IChromeCookieVectors;
 
@@ -766,7 +769,7 @@ private: \
 					bHttpOnly: 默认为false.
 					返回: 如果返回真则操作是成功的
 		*/
-		BOOL SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCTSTR szDomain, LPCTSTR szPath, BOOL bSecure,__int64 expires, BOOL bHttpOnly);
+		BOOL SetCookie(LPCTSTR szUrl, LPCTSTR szName, LPCTSTR szValue, LPCTSTR szDomain, LPCTSTR szPath, BOOL bSecure,double expires, BOOL bHttpOnly);
 
 		/*
 					函数: GetResourceList

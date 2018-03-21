@@ -925,11 +925,11 @@ BOOL APIENTRY chrome_struct_cookie_secure(IChromeCookie *pCookie)
 	return FALSE;
 }
 
-__int64 APIENTRY chrome_struct_cookie_expires(IChromeCookie *pCookie)
+double APIENTRY chrome_struct_cookie_expires(IChromeCookie *pCookie)
 {
 	if (pCookie != NULL)
 	{
-		return pCookie->bSecure;
+		return pCookie->expires;
 	}
 	return FALSE;
 }
@@ -959,7 +959,7 @@ BOOL APIENTRY chrome_accessor_delete_cookie(IChromeLink *pAccessor,const char *s
 	return FALSE;
 }
 
-BOOL APIENTRY chrome_accessor_set_cookie(IChromeLink *pAccessor,const char *szUrl, const char *szName, const char *szValue, const char *szDomain, const char *szPath, BOOL bSecure,__int64 expires, BOOL bHttpOnly)
+BOOL APIENTRY chrome_accessor_set_cookie(IChromeLink *pAccessor,const char *szUrl, const char *szName, const char *szValue, const char *szDomain, const char *szPath, BOOL bSecure,double expires, BOOL bHttpOnly)
 {
 	if (pAccessor != NULL)
 	{
